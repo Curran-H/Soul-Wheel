@@ -1,0 +1,11 @@
+THIRD-PARTY NOTICES
+
+All included game assets are public domain licensed. 
+Links to the creators of the assets used in the demonstration scenes:
+• Isaac: pixel-poem.itch.io/dungeon-assetpuck
+• Corridors: kaylousberg.itch.io/kaykit-dungeon
+• Islands: itch.io/t/993390/low-poly-island-assets
+
+The font used in Dungeon Maker is called Rota.
+By default, it is located inside the Fonts folder along with the corresponding license. 
+This is a free commercial resource downloaded from the Fontesk website: www.fontesk.com/rota-font-family

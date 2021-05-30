@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ba7d5939e956e44eb89e58f352801bf, type: 3}
+  m_Name: Corridor
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: a05467aef9cd45741b4dc2f2c92277a2, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  rooms:
+    DEFAULT: []
+    TBLR:
+    - {fileID: 6101222887983069395, guid: 0d682e2984363b04f8114a0b14d6076c, type: 3}
+    TB:
+    - {fileID: 6389876128210377623, guid: f7d74b82c9ffb204093219b5a4f1573f, type: 3}
+    LR:
+    - {fileID: 6389876128210377623, guid: f7d74b82c9ffb204093219b5a4f1573f, type: 3}
+    T: []
+    B: []
+    L: []
+    R: []
+    TL:
+    - {fileID: 2662054412546076112, guid: d0ab5046fabe3394295990cf770d7859, type: 3}
+    TR:
+    - {fileID: 2662054412546076112, guid: d0ab5046fabe3394295990cf770d7859, type: 3}
+    BL:
+    - {fileID: 2662054412546076112, guid: d0ab5046fabe3394295990cf770d7859, type: 3}
+    BR:
+    - {fileID: 2662054412546076112, guid: d0ab5046fabe3394295990cf770d7859, type: 3}
+    TBL:
+    - {fileID: 568048828427273313, guid: b0d11f5ba7771c9448ae4ded90f9f765, type: 3}
+    TBR:
+    - {fileID: 568048828427273313, guid: b0d11f5ba7771c9448ae4ded90f9f765, type: 3}
+    TLR:
+    - {fileID: 568048828427273313, guid: b0d11f5ba7771c9448ae4ded90f9f765, type: 3}
+    BLR:
+    - {fileID: 568048828427273313, guid: b0d11f5ba7771c9448ae4ded90f9f765, type: 3}

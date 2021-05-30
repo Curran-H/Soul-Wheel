@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ba7d5939e956e44eb89e58f352801bf, type: 3}
+  m_Name: Void
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 65c0a971f8191654f853ef695b6860b5, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  rooms:
+    DEFAULT:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}
+    TBLR:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}
+    TB:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}
+    LR:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}
+    T:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}
+    B:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}
+    L:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}
+    R:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}
+    TL:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}
+    TR:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}
+    BL:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}
+    BR:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}
+    TBL:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}
+    TBR:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}
+    TLR:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}
+    BLR:
+    - {fileID: 3534090356741321079, guid: 3d746ab9bde17b5409cc00152615b8ed, type: 3}

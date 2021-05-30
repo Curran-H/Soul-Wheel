@@ -1,0 +1,14 @@
+01_DEMO_ISAAC
+
+In this scene the basic notions of Dungeon Maker are put into practice.
+Pay attention to how alternative tools such as the Randomizer and the Rules are used.
+
+As you can see, the rooms do not have to be exactly square, in this case they are rectangular.
+But you can also combine different room sizes.
+If you look closely, you can see that there is a smaller room on the map.
+
+In essence, Dungeon Maker just places GameObjects next to each other as you have specified in the design.
+How these GameObjects are connected depends on how you have configured your object.
+
+This aspect makes Dungeon Maker very versatile and can easily adapt to any type of game.
+Instead of rooms, you could make zones or areas in an open world, arrange objects on a board, whatever... the limit is your imagination.

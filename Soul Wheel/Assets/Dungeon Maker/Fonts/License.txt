@@ -1,0 +1,34 @@
+These are the general font usage terms, which are applical to all available fonts on Fontesk. The main purpose is to protect the intellectual property rights of font authors as much as possible, while offering the authors the flexibility to override these terms in a readme.txt file. Some font authors might not provide sufficient information in their own terms, so this license covers the bare essentials that might have been missed.
+
+Copyright
+All fonts offered on Fontesk are the intellectual property of their respective authors, unless they are in the public domain and provided they are original.
+
+Personal Use
+All fonts may be downloaded and used free of charge for personal use, as long as the usage is not racist or illegal. Fonts available for personal use are limited to projects that will not be related with any business or monetary gain. This includes work for personal art, gifts, charity, student and other non commercial projects.
+
+Commercial Use
+For commercial use of a font, please check the font zip-file for a readme.txt, license.pdf or an equivalent file for licensing information. If no information is given, commercial use is not allowed without prior written permission from the respective author. Please contact the author to ask for commercial licensing in such a case. Fonts in the public domain may be used free for commercial use.
+
+Commercial use refers to usage in a business environment, including:
+
+Creating branding elements including logos for you or your clients;
+Creating design works & rasterized images for web use;
+Creating artwork for clothing, packaging, posters or similar commercial products, for sale or for promotional use by you, your company, or your clients (Less than 25,000 Units).
+You may require additional license to use the font in large volume projects (more than 25,000 units/reproductions), broadcast usage, embedding in Apps or Websites unless otherwise stated in corresponding custom terms by the respective author.
+
+OFL (SIL Open Font License)
+SIL OFL is a free software license, and fonts covered by this license can be freely used, modified, and distributed (as long as the derivatives remain under the same license). With this license, fonts can can be used in commercial promotions and products. Fonts cannot be sold on their own, but you can embed them in programs.
+
+Frequently Asked Questions about the SIL Open Font License
+
+Modification
+All fonts may not be modified, altered, adapted, translated, decompiled, disassembled or used to create derivative works, unless otherwise stated in corresponding custom terms by the respective author within the font zip-file in a readme.txt, license.pdf or an equivalent file. This does not apply to fonts in the public domain, which may be modified freely.
+
+Distribution
+While all fonts may freely be copied and passed along to other individuals for private use, they may not be sold, redistributed or published, unless otherwise stated in corresponding custom terms by the respective author or if the font is in the public domain.
+
+Further terms
+Further custom terms made by the respective author of a font may apply and should be found within the font zip-file in a readme.txt, license.pdf or an equivalent file.
+
+Disclaimer
+All fonts are offered 'as is' without any warranty. Fontesk and the respective authors of all fonts shall not be liable for any damage derived from using the font.

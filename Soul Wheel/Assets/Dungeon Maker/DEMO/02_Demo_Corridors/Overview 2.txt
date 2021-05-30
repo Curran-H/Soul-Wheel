@@ -1,0 +1,18 @@
+02_DEMO_CORRIDORS
+
+In this scene, programming techniques are put into practice.
+For this purpose I have created a special script (CorridorController).
+It is in charge of orienting the corridors correctly to connect distant rooms.
+
+If you prefer, you can analyze the script.
+In this case, I want to run the script after the dungeon has been generated, for this I subscribe to the OnGeneratorFinish event.
+Then, knowing the room type and using a custom enum to specify the shape (CorridorType), I can determine the correct orientation.
+
+I recommend that you take a look at the DungeonObject and RoomObject scripts to find out all the information you can get to create your own functionality.
+
+Another point to note about this scene is the Corridor room.
+Open this room in the RoomEditor and see how it is configured.
+Maybe you will get a better understanding of what the initials T, B, L, R and DEFAULT mean.
+
+PS: to make use of Dungeon Maker in a script simply import the namespace: 
+using DungeonMaker;

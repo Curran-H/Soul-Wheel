@@ -1,0 +1,16 @@
+03_DEMO_ISLANDS
+
+This extra scene I have created mainly to experiment.
+In this case I imitate a game with islands.
+
+For example the player can appear on a large island and be surrounded by small islands.
+Passing from island to island he could reach a new big island where there is a treasure or whatever...
+Each map would be different but they always have in common a big island surrounded by smaller islands that he has to visit, etc.
+
+Something I would like to point out (although you have probably already noticed) is that there can be several designs in the same generator, like the one in this scene.
+The generator will choose one randomly at the beginning of the generation.
+
+With this in mind, you can manipulate the probabilities with which the designs are generated.
+For example, if you want to make it more likely that design A will appear instead of design B, you can simply duplicate this item in the generator's list.
+You can also put several generators in a randomizer.
+If this way does not suit you, you can always modify the generator script as you please to suit your needs.

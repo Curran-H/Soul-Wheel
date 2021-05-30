@@ -1,0 +1,15 @@
+Version 1.3
+ Now the editor scales correctly when the UI Scaling option is enabled in the Unity preferences.
+ Dungeon Maker informative messages have been highlighted.
+ A Changelog file has been added.
+ New demo scene (4).
+
+Version 1.2
+ Fixed a bug that caused the generator to not update the seed correctly.
+
+Version 1.1
+ The namespace structure has been improved.
+ Explanatory texts have been added to the demonstration scenes.
+
+Version 1.0
+ First Release!

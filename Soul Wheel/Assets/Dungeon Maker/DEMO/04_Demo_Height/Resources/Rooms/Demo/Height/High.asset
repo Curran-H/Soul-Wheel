@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ba7d5939e956e44eb89e58f352801bf, type: 3}
+  m_Name: High
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 4874e635a345f564e8856c536159c96d, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  rooms:
+    DEFAULT:
+    - {fileID: 1598372660572343736, guid: b9e32ba719a361340bf4ff19ed9da422, type: 3}
+    TBLR: []
+    TB: []
+    LR: []
+    T: []
+    B: []
+    L: []
+    R: []
+    TL: []
+    TR: []
+    BL: []
+    BR: []
+    TBL: []
+    TBR: []
+    TLR: []
+    BLR: []
