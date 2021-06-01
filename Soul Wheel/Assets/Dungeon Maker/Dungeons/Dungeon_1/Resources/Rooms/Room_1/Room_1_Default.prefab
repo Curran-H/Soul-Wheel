@@ -176,6 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1663923997711374860}
   - component: {fileID: 7020655482550706155}
+  - component: {fileID: 5049609099662934384}
   m_Layer: 0
   m_Name: Bad Tileset_2 (5)
   m_TagString: Untagged
@@ -249,6 +250,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &5049609099662934384
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456608565561258774}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &476586434281717266
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +829,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4429655161540233914}
   - component: {fileID: 214080108844025536}
+  - component: {fileID: 8349891328767635150}
   m_Layer: 0
   m_Name: Bad Tileset_2 (1)
   m_TagString: Untagged
@@ -880,6 +903,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &8349891328767635150
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362730087063234803}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1669950334056780331
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,6 +1017,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1035749179012060110}
   - component: {fileID: 1186824964462501995}
+  - component: {fileID: 3016495349884914334}
   m_Layer: 0
   m_Name: Bad Tileset_2 (14)
   m_TagString: Untagged
@@ -1046,6 +1091,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &3016495349884914334
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695128590852470690}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1737197544410887702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,6 +1403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2333211424813540826}
   - component: {fileID: 2395865922073528673}
+  - component: {fileID: 8577231695086503803}
   m_Layer: 0
   m_Name: Bad Tileset_1
   m_TagString: Untagged
@@ -1410,6 +1477,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &8577231695086503803
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115408161868501836}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &2122274200639654934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1701,6 +1789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5646471769087759608}
   - component: {fileID: 4857848351056486248}
+  - component: {fileID: 828403129625336202}
   m_Layer: 0
   m_Name: Bad Tileset_2 (7)
   m_TagString: Untagged
@@ -1774,6 +1863,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &828403129625336202
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2190626679292444943}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &2350109758419662900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1950,6 +2060,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6353410786221647218}
   - component: {fileID: 2078214760485005795}
+  - component: {fileID: 3405297930665300815}
   m_Layer: 0
   m_Name: Bad Tileset_2
   m_TagString: Untagged
@@ -2023,6 +2134,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &3405297930665300815
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2412078766266499710}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &2456494816258113342
 GameObject:
   m_ObjectHideFlags: 0
@@ -2332,6 +2464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 697921067735553626}
   - component: {fileID: 7276042031209875054}
+  - component: {fileID: 763649743974964175}
   m_Layer: 0
   m_Name: Bad Tileset_2 (20)
   m_TagString: Untagged
@@ -2405,6 +2538,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &763649743974964175
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2676123626571522456}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &2743909882138792933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2415,6 +2569,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4760587914505541551}
   - component: {fileID: 8995766438052175560}
+  - component: {fileID: 1358407650546601700}
   m_Layer: 0
   m_Name: Bad Tileset_1 (2)
   m_TagString: Untagged
@@ -2488,6 +2643,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1358407650546601700
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2743909882138792933}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &2895530087526575832
 GameObject:
   m_ObjectHideFlags: 0
@@ -3325,6 +3501,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2151727788336917210}
   - component: {fileID: 991612622223508196}
+  - component: {fileID: 304914915080628892}
   m_Layer: 0
   m_Name: Bad Tileset_2 (18)
   m_TagString: Untagged
@@ -3398,6 +3575,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &304914915080628892
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4178742849829066988}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &4300750845503916625
 GameObject:
   m_ObjectHideFlags: 0
@@ -3740,6 +3938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3632368389104019059}
   - component: {fileID: 4417674320440832304}
+  - component: {fileID: 422449645120094491}
   m_Layer: 0
   m_Name: Bad Tileset_2 (17)
   m_TagString: Untagged
@@ -3813,6 +4012,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &422449645120094491
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4826050784111086914}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &4874018718919241550
 GameObject:
   m_ObjectHideFlags: 0
@@ -3823,6 +4043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2318420645344082524}
   - component: {fileID: 8603800455187489141}
+  - component: {fileID: 7697927133661045384}
   m_Layer: 0
   m_Name: Bad Tileset_2 (8)
   m_TagString: Untagged
@@ -3896,6 +4117,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &7697927133661045384
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4874018718919241550}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &4988952947537997937
 GameObject:
   m_ObjectHideFlags: 0
@@ -3906,6 +4148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5411866473294708232}
   - component: {fileID: 5285249540450840115}
+  - component: {fileID: 3082486100527370766}
   m_Layer: 0
   m_Name: Bad Tileset_2 (6)
   m_TagString: Untagged
@@ -3979,6 +4222,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &3082486100527370766
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4988952947537997937}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &5334631039273692514
 GameObject:
   m_ObjectHideFlags: 0
@@ -4289,6 +4553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8141034102568783142}
   - component: {fileID: 8955258184611016470}
+  - component: {fileID: 8732000639407129698}
   m_Layer: 0
   m_Name: Bad Tileset_2 (19)
   m_TagString: Untagged
@@ -4362,6 +4627,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &8732000639407129698
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5922341349646527038}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &6003152755774494636
 GameObject:
   m_ObjectHideFlags: 0
@@ -4455,6 +4741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2338995004047097438}
   - component: {fileID: 8839850351682734728}
+  - component: {fileID: 2713678775093962606}
   m_Layer: 0
   m_Name: Bad Tileset_2 (24)
   m_TagString: Untagged
@@ -4528,6 +4815,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2713678775093962606
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6078278564904701091}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &6090149081763917421
 GameObject:
   m_ObjectHideFlags: 0
@@ -5036,6 +5344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4326866976503633077}
   - component: {fileID: 7086556871667396734}
+  - component: {fileID: 1376819793242943087}
   m_Layer: 0
   m_Name: Bad Tileset_1 (3)
   m_TagString: Untagged
@@ -5109,6 +5418,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1376819793242943087
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6793079893791183905}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &6857905570222081560
 GameObject:
   m_ObjectHideFlags: 0
@@ -5167,6 +5497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5254234904781607700}
   - component: {fileID: 7653441223854194687}
+  - component: {fileID: 2818102469463804835}
   m_Layer: 0
   m_Name: Bad Tileset_2 (11)
   m_TagString: Untagged
@@ -5240,6 +5571,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2818102469463804835
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6866102665439624764}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &6916963793154218989
 GameObject:
   m_ObjectHideFlags: 0
@@ -5547,6 +5899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5804301718537243279}
   - component: {fileID: 1255063111442685929}
+  - component: {fileID: 3713005962787903444}
   m_Layer: 0
   m_Name: Bad Tileset_1 (1)
   m_TagString: Untagged
@@ -5620,6 +5973,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &3713005962787903444
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7316820234727650927}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &7390152761878294370
 GameObject:
   m_ObjectHideFlags: 0
@@ -5713,6 +6087,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5720522685741170803}
   - component: {fileID: 1121753608600646992}
+  - component: {fileID: 7004678608069885380}
   m_Layer: 0
   m_Name: Bad Tileset_2 (23)
   m_TagString: Untagged
@@ -5786,6 +6161,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &7004678608069885380
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7409929939453776507}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &7454221088648075127
 GameObject:
   m_ObjectHideFlags: 0
@@ -6541,6 +6937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8058015221715227516}
   - component: {fileID: 5031639321316650995}
+  - component: {fileID: 1102764284801120286}
   m_Layer: 0
   m_Name: Bad Tileset_2 (13)
   m_TagString: Untagged
@@ -6614,6 +7011,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1102764284801120286
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8422932675724350123}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &8552715113778695125
 GameObject:
   m_ObjectHideFlags: 0
@@ -6790,6 +7208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 274265648414713539}
   - component: {fileID: 9164522353633347676}
+  - component: {fileID: 1670682066635961715}
   m_Layer: 0
   m_Name: Bad Tileset_2 (12)
   m_TagString: Untagged
@@ -6863,6 +7282,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1670682066635961715
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8739350523158900308}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &8809549053084230062
 GameObject:
   m_ObjectHideFlags: 0
