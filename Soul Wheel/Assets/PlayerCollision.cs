@@ -4,6 +4,9 @@ public class PlayerCollision : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(this.name + " collided with something.");
+        if (collision.gameObject.tag == "Wall")
+        {
+            Debug.Log(gameObject.name + " collided with something.");
+        }
     }
 }

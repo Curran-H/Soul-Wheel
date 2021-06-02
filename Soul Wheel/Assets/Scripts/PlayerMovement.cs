@@ -22,4 +22,12 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        //if (collision.gameObject.tag == "Wall")
+        //{
+            Debug.Log(gameObject.name + " collided with something.");
+        //}
+    }
 }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6634615262701739103
+--- !u!114 &-9198349678881565435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13,180 +13,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelected: 0
-  nodeID: 80526
+  nodeID: 86908
   nodeType: 1
   nodeRect:
     serializedVersion: 2
-    x: 868.8092
-    y: 1293.1606
+    x: 921.32153
+    y: 935.432
     width: 40
     height: 40
   dungeon: {fileID: 11400000}
-  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
-  connections: fa9c0000081e0100
-  initialConnections: fa9c0000081e0100
+  room: {fileID: 11400000, guid: effe739f49ca593469d15d5e3dd5e83a, type: 2}
+  connections: 096d01003de50000
+  initialConnections: 096d01003de50000
   buttonRect:
     serializedVersion: 2
-    x: 858.8092
-    y: 1283.1606
+    x: 911.32153
+    y: 925.432
     width: 60
     height: 60
---- !u!114 &-6293768880702790797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSelected: 0
-  nodeID: 91800
-  nodeType: 1
-  nodeRect:
-    serializedVersion: 2
-    x: 936.1722
-    y: 1225.9288
-    width: 40
-    height: 40
-  dungeon: {fileID: 11400000}
-  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
-  connections: 3de50000081e0100a80d0100fa9c0000
-  initialConnections: 3de50000081e0100a80d0100fa9c0000
-  buttonRect:
-    serializedVersion: 2
-    x: 926.1722
-    y: 1215.9288
-    width: 60
-    height: 60
---- !u!114 &-5090842547017151077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSelected: 0
-  nodeID: 60788
-  nodeType: 1
-  nodeRect:
-    serializedVersion: 2
-    x: 935.80914
-    y: 1099.1606
-    width: 40
-    height: 40
-  dungeon: {fileID: 11400000}
-  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
-  connections: 3de50000096d0100
-  initialConnections: 3de50000096d0100
-  buttonRect:
-    serializedVersion: 2
-    x: 925.80914
-    y: 1089.1606
-    width: 60
-    height: 60
---- !u!114 &-4276251144486717702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSelected: 0
-  nodeID: 39654
-  nodeType: 1
-  nodeRect:
-    serializedVersion: 2
-    x: 1000.8092
-    y: 1162.1606
-    width: 40
-    height: 40
-  dungeon: {fileID: 11400000}
-  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
-  connections: a80d01003de50000
-  initialConnections: a80d01003de5000010f00000
-  buttonRect:
-    serializedVersion: 2
-    x: 990.8092
-    y: 1152.1606
-    width: 60
-    height: 60
---- !u!114 &-2714512926135886402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSelected: 0
-  nodeID: 93449
-  nodeType: 1
-  nodeRect:
-    serializedVersion: 2
-    x: 935.8092
-    y: 1034.1617
-    width: 40
-    height: 40
-  dungeon: {fileID: 11400000}
-  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
-  connections: 74ed0000d042000010f00000
-  initialConnections: 74ed0000d042000010f00000
-  buttonRect:
-    serializedVersion: 2
-    x: 925.8092
-    y: 1024.1617
-    width: 60
-    height: 60
---- !u!114 &-1354684368805966954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSelected: 0
-  nodeID: 87622
-  nodeType: 1
-  nodeRect:
-    serializedVersion: 2
-    x: 998.80914
-    y: 1290.1606
-    width: 40
-    height: 40
-  dungeon: {fileID: 11400000}
-  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
-  connections: 081e0100a80d0100
-  initialConnections: 081e0100a80d0100
-  buttonRect:
-    serializedVersion: 2
-    x: 988.80914
-    y: 1280.1606
-    width: 60
-    height: 60
---- !u!114 &-256606865471462819
+--- !u!114 &-8229718818993867019
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,8 +48,8 @@ MonoBehaviour:
   nodeType: 1
   nodeRect:
     serializedVersion: 2
-    x: 997.80914
-    y: 970.1625
+    x: 983.80914
+    y: 808.1625
     width: 40
     height: 40
   dungeon: {fileID: 11400000}
@@ -213,172 +58,11 @@ MonoBehaviour:
   initialConnections: 10f00000d0420000
   buttonRect:
     serializedVersion: 2
-    x: 987.80914
-    y: 960.1625
+    x: 973.80914
+    y: 798.1625
     width: 60
     height: 60
---- !u!114 &-42625483457005432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSelected: 0
-  nodeID: 40186
-  nodeType: 1
-  nodeRect:
-    serializedVersion: 2
-    x: 869.8092
-    y: 1228.1606
-    width: 40
-    height: 40
-  dungeon: {fileID: 11400000}
-  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
-  connections: 8e3a010098660100
-  initialConnections: 8e3a010098660100
-  buttonRect:
-    serializedVersion: 2
-    x: 859.8092
-    y: 1218.1606
-    width: 60
-    height: 60
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5966b24b316721944a3f85dcfa95eb52, type: 3}
-  m_Name: Dungeon_1
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: -6293768880702790797}
-  - {fileID: 8507774312144819024}
-  - {fileID: 6446274741072594539}
-  - {fileID: -5090842547017151077}
-  - {fileID: 8962137027618937079}
-  - {fileID: 4674129986107938731}
-  - {fileID: 5242528442294352851}
-  - {fileID: -2714512926135886402}
-  - {fileID: 9128993165908206398}
-  - {fileID: 1614085093716101992}
-  - {fileID: -4276251144486717702}
-  - {fileID: -42625483457005432}
-  - {fileID: -6634615262701739103}
-  - {fileID: 285182730151319404}
-  - {fileID: -256606865471462819}
-  - {fileID: -1354684368805966954}
-  selectedNodes: []
-  currentNode: {fileID: 0}
-  connectionNode: {fileID: 0}
-  wantMove: 0
-  wantConnect: 0
-  wantDisconnect: 0
-  wantSelect: 0
-  showProperties: 0
---- !u!114 &285182730151319404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSelected: 0
-  nodeID: 61456
-  nodeType: 1
-  nodeRect:
-    serializedVersion: 2
-    x: 997.80914
-    y: 1035.1616
-    width: 40
-    height: 40
-  dungeon: {fileID: 11400000}
-  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
-  connections: 096d010088960000
-  initialConnections: 096d010088960000e69a0000
-  buttonRect:
-    serializedVersion: 2
-    x: 987.80914
-    y: 1025.1616
-    width: 60
-    height: 60
---- !u!114 &1614085093716101992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSelected: 0
-  nodeID: 86322
-  nodeType: 1
-  nodeRect:
-    serializedVersion: 2
-    x: 1062.8091
-    y: 1226.1606
-    width: 40
-    height: 40
-  dungeon: {fileID: 11400000}
-  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
-  connections: a80d0100
-  initialConnections: a80d0100
-  buttonRect:
-    serializedVersion: 2
-    x: 1052.8091
-    y: 1216.1606
-    width: 60
-    height: 60
---- !u!114 &4674129986107938731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSelected: 0
-  nodeID: 17788
-  nodeType: 1
-  nodeRect:
-    serializedVersion: 2
-    x: 934.80914
-    y: 842.1625
-    width: 40
-    height: 40
-  dungeon: {fileID: 11400000}
-  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
-  connections: 35290100
-  initialConnections: 35290100
-  buttonRect:
-    serializedVersion: 2
-    x: 924.80914
-    y: 832.1625
-    width: 60
-    height: 60
---- !u!114 &5242528442294352851
+--- !u!114 &-7003994600690716865
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -395,8 +79,8 @@ MonoBehaviour:
   nodeType: 1
   nodeRect:
     serializedVersion: 2
-    x: 935.8092
-    y: 971.1625
+    x: 921.8092
+    y: 809.1625
     width: 40
     height: 40
   dungeon: {fileID: 11400000}
@@ -405,11 +89,11 @@ MonoBehaviour:
   initialConnections: 096d01003529010088960000
   buttonRect:
     serializedVersion: 2
-    x: 925.8092
-    y: 961.1625
+    x: 911.8092
+    y: 799.1625
     width: 60
     height: 60
---- !u!114 &6446274741072594539
+--- !u!114 &-4107434818761848481
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -426,8 +110,8 @@ MonoBehaviour:
   nodeType: 1
   nodeRect:
     serializedVersion: 2
-    x: 934.74744
-    y: 1292.7968
+    x: 920.74744
+    y: 1130.7968
     width: 40
     height: 40
   dungeon: {fileID: 11400000}
@@ -436,11 +120,172 @@ MonoBehaviour:
   initialConnections: 986601008e3a010046560100
   buttonRect:
     serializedVersion: 2
-    x: 924.74744
-    y: 1282.7968
+    x: 910.74744
+    y: 1120.7968
     width: 60
     height: 60
---- !u!114 &8507774312144819024
+--- !u!114 &-1471733005736174581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  nodeID: 91800
+  nodeType: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 922.1722
+    y: 1063.9288
+    width: 40
+    height: 40
+  dungeon: {fileID: 11400000}
+  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
+  connections: 3de50000081e0100a80d0100fa9c0000
+  initialConnections: 3de50000081e0100a80d0100fa9c0000
+  buttonRect:
+    serializedVersion: 2
+    x: 912.1722
+    y: 1053.9288
+    width: 60
+    height: 60
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5966b24b316721944a3f85dcfa95eb52, type: 3}
+  m_Name: Dungeon_1
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -1471733005736174581}
+  - {fileID: 2598042986922271726}
+  - {fileID: -4107434818761848481}
+  - {fileID: 6589315429457306659}
+  - {fileID: 1478706535328758519}
+  - {fileID: -7003994600690716865}
+  - {fileID: 693140434170392619}
+  - {fileID: 7725628141537447889}
+  - {fileID: 549936763981336960}
+  - {fileID: 4293884424578932491}
+  - {fileID: 3744445983298073344}
+  - {fileID: 3436904915275185140}
+  - {fileID: 7818877309250108876}
+  - {fileID: -8229718818993867019}
+  - {fileID: 8178103076352320851}
+  - {fileID: -9198349678881565435}
+  selectedNodes: []
+  currentNode: {fileID: 0}
+  connectionNode: {fileID: 0}
+  wantMove: 0
+  wantConnect: 0
+  wantDisconnect: 0
+  wantSelect: 0
+  showProperties: 0
+--- !u!114 &549936763981336960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  nodeID: 86322
+  nodeType: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 1048.8091
+    y: 1064.1606
+    width: 40
+    height: 40
+  dungeon: {fileID: 11400000}
+  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
+  connections: a80d0100
+  initialConnections: a80d0100
+  buttonRect:
+    serializedVersion: 2
+    x: 1038.8091
+    y: 1054.1606
+    width: 60
+    height: 60
+--- !u!114 &693140434170392619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  nodeID: 93449
+  nodeType: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 921.8092
+    y: 872.16174
+    width: 40
+    height: 40
+  dungeon: {fileID: 11400000}
+  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
+  connections: d042000010f000007c530100
+  initialConnections: d042000010f000007c530100
+  buttonRect:
+    serializedVersion: 2
+    x: 911.8092
+    y: 862.16174
+    width: 60
+    height: 60
+--- !u!114 &1478706535328758519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  nodeID: 17788
+  nodeType: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 920.80914
+    y: 680.1625
+    width: 40
+    height: 40
+  dungeon: {fileID: 11400000}
+  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
+  connections: 35290100
+  initialConnections: 35290100
+  buttonRect:
+    serializedVersion: 2
+    x: 910.80914
+    y: 670.1625
+    width: 60
+    height: 60
+--- !u!114 &2598042986922271726
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -457,21 +302,114 @@ MonoBehaviour:
   nodeType: 1
   nodeRect:
     serializedVersion: 2
-    x: 935.85016
-    y: 1161.832
+    x: 921.85016
+    y: 999.83203
     width: 40
     height: 40
   dungeon: {fileID: 11400000}
   room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
-  connections: 9866010074ed0000e69a0000
-  initialConnections: 9866010074ed0000e69a0000
+  connections: 98660100e69a00007c530100
+  initialConnections: 98660100e69a00007c530100
   buttonRect:
     serializedVersion: 2
-    x: 925.85016
-    y: 1151.832
+    x: 911.85016
+    y: 989.83203
     width: 60
     height: 60
---- !u!114 &8962137027618937079
+--- !u!114 &3436904915275185140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  nodeID: 80526
+  nodeType: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 854.8092
+    y: 1131.1606
+    width: 40
+    height: 40
+  dungeon: {fileID: 11400000}
+  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
+  connections: fa9c0000081e0100
+  initialConnections: fa9c0000081e0100
+  buttonRect:
+    serializedVersion: 2
+    x: 844.8092
+    y: 1121.1606
+    width: 60
+    height: 60
+--- !u!114 &3744445983298073344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  nodeID: 40186
+  nodeType: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 855.8092
+    y: 1066.1606
+    width: 40
+    height: 40
+  dungeon: {fileID: 11400000}
+  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
+  connections: 8e3a010098660100
+  initialConnections: 8e3a010098660100
+  buttonRect:
+    serializedVersion: 2
+    x: 845.8092
+    y: 1056.1606
+    width: 60
+    height: 60
+--- !u!114 &4293884424578932491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  nodeID: 39654
+  nodeType: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 986.8092
+    y: 1000.16064
+    width: 40
+    height: 40
+  dungeon: {fileID: 11400000}
+  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
+  connections: a80d01003de50000
+  initialConnections: a80d01003de50000
+  buttonRect:
+    serializedVersion: 2
+    x: 976.8092
+    y: 990.16064
+    width: 60
+    height: 60
+--- !u!114 &6589315429457306659
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -488,8 +426,8 @@ MonoBehaviour:
   nodeType: 1
   nodeRect:
     serializedVersion: 2
-    x: 935.8092
-    y: 908.1625
+    x: 921.8092
+    y: 746.1625
     width: 40
     height: 40
   dungeon: {fileID: 11400000}
@@ -498,11 +436,11 @@ MonoBehaviour:
   initialConnections: d04200007c450000
   buttonRect:
     serializedVersion: 2
-    x: 925.8092
-    y: 898.1625
+    x: 911.8092
+    y: 736.1625
     width: 60
     height: 60
---- !u!114 &9128993165908206398
+--- !u!114 &7725628141537447889
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -519,8 +457,8 @@ MonoBehaviour:
   nodeType: 1
   nodeRect:
     serializedVersion: 2
-    x: 999.80914
-    y: 1225.1606
+    x: 985.80914
+    y: 1063.1606
     width: 40
     height: 40
   dungeon: {fileID: 11400000}
@@ -529,7 +467,69 @@ MonoBehaviour:
   initialConnections: 9866010032510100e69a000046560100
   buttonRect:
     serializedVersion: 2
-    x: 989.80914
-    y: 1215.1606
+    x: 975.80914
+    y: 1053.1606
+    width: 60
+    height: 60
+--- !u!114 &7818877309250108876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  nodeID: 61456
+  nodeType: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 983.80914
+    y: 873.1616
+    width: 40
+    height: 40
+  dungeon: {fileID: 11400000}
+  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
+  connections: 096d010088960000
+  initialConnections: 096d010088960000
+  buttonRect:
+    serializedVersion: 2
+    x: 973.80914
+    y: 863.1616
+    width: 60
+    height: 60
+--- !u!114 &8178103076352320851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c4802720ac03444a9765364ce57c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  nodeID: 87622
+  nodeType: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 984.80914
+    y: 1128.1606
+    width: 40
+    height: 40
+  dungeon: {fileID: 11400000}
+  room: {fileID: 11400000, guid: 34cf8efe3b80aeb4fbbf0852a43a90ab, type: 2}
+  connections: 081e0100a80d0100
+  initialConnections: 081e0100a80d0100
+  buttonRect:
+    serializedVersion: 2
+    x: 974.80914
+    y: 1118.1606
     width: 60
     height: 60
