@@ -5,12 +5,11 @@ using UnityEngine;
 public class Stats : MonoBehaviour
 {
     public double baseSpeed;
-    public double speed;
+    private double speed;
 
     // Start is called before the first frame update
     void Start()
     {
-        baseSpeed = 5;
         speed = baseSpeed * Random.Range(0.5f, 1.5f);
     }
 

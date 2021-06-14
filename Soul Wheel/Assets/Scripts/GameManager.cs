@@ -19,12 +19,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        Instantiate(turnManager);
-        UpdateGameState(GameState.PlayerTurn);
-        UpdateGameState(GameState.AllyTurn);
-        UpdateGameState(GameState.EnemyTurn);
-        UpdateGameState(GameState.Lose);
-        UpdateGameState(GameState.NextLevel);
+        UpdateGameState(GameState.Sample);
+        UpdateGameState(GameState.Text);
     }
 
     public void UpdateGameState(GameState newState)
@@ -33,54 +29,32 @@ public class GameManager : MonoBehaviour
 
         switch (newState)
         {
-            case GameState.PlayerTurn:
-                HandlePlayerTurn();
+            case GameState.Sample:
+                HandleSample();
                 break;
-            case GameState.AllyTurn:
-                HandleAllyTurn();
-                break;
-            case GameState.EnemyTurn:
-                HandleEnemyTurn();
-                break;
-            case GameState.Lose:
-                HandleLose();
-                break;
-            case GameState.NextLevel:
-                HandleLose();
+            case GameState.Text:
+                HandleText();
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
         }
 
-        OnGameStateChanged(newState);
+        OnGameStateChanged?.Invoke(newState);
     }
 
-    private void HandlePlayerTurn()
+    private void HandleSample()
     {
         
     }
 
-    private void HandleAllyTurn()
-    {
-
-    }
-
-    private void HandleEnemyTurn()
-    {
-
-    }
-
-    private void HandleLose()
+    private void HandleText()
     {
 
     }
 
     public enum GameState
 {
-    PlayerTurn,
-    AllyTurn,
-    EnemyTurn,
-    NextLevel,
-    Lose
+    Sample,
+    Text
 }
 }
