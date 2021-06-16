@@ -15,6 +15,9 @@ TextureImporter:
       213: -5954405669149085089
     second: Red Temp Avatar_3
   - first:
+      213: 3616663674340526116
+    second: Red Temp Avatar_4
+  - first:
       213: -2278315418675681024
     second: Red Temp Avatar_5
   - first:
@@ -41,6 +44,9 @@ TextureImporter:
   - first:
       213: -6816694366461947024
     second: Red Temp Avatar_13
+  - first:
+      213: -8681078685758797594
+    second: Red Temp Avatar_14
   - first:
       213: 5491941640671314607
     second: Red Temp Avatar_15
@@ -69,6 +75,9 @@ TextureImporter:
       213: 7818078768526057581
     second: Red Temp Avatar_23
   - first:
+      213: 5069364086884337384
+    second: Red Temp Avatar_24
+  - first:
       213: -2031772423490755287
     second: Red Temp Avatar_25
   - first:
@@ -96,20 +105,11 @@ TextureImporter:
       213: -2800863605349933098
     second: Red Temp Avatar_33
   - first:
+      213: 2490066588834078550
+    second: Red Temp Avatar_34
+  - first:
       213: 8314776676054013062
     second: Red Temp Avatar_35
-  - first:
-      213: -8531070384426485939
-    second: Red Temp Avatar_36
-  - first:
-      213: -4075001397033444683
-    second: Red Temp Avatar_37
-  - first:
-      213: -8839693425986447510
-    second: Red Temp Avatar_38
-  - first:
-      213: 3319441257167529918
-    second: Red Temp Avatar_39
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -151,7 +151,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
@@ -283,10 +283,31 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red Temp Avatar_5
+      name: Red Temp Avatar_4
       rect:
         serializedVersion: 2
         x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428402d2378f03230800000000000000
+      internalID: 3616663674340526116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Temp Avatar_5
+      rect:
+        serializedVersion: 2
+        x: 192
         y: 96
         width: 32
         height: 32
@@ -307,7 +328,7 @@ TextureImporter:
       name: Red Temp Avatar_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 224
         y: 96
         width: 32
         height: 32
@@ -328,7 +349,7 @@ TextureImporter:
       name: Red Temp Avatar_7
       rect:
         serializedVersion: 2
-        x: 224
+        x: 256
         y: 96
         width: 32
         height: 32
@@ -349,7 +370,7 @@ TextureImporter:
       name: Red Temp Avatar_8
       rect:
         serializedVersion: 2
-        x: 256
+        x: 288
         y: 96
         width: 32
         height: 32
@@ -370,8 +391,8 @@ TextureImporter:
       name: Red Temp Avatar_9
       rect:
         serializedVersion: 2
-        x: 288
-        y: 96
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -391,7 +412,7 @@ TextureImporter:
       name: Red Temp Avatar_10
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 64
         width: 32
         height: 32
@@ -412,7 +433,7 @@ TextureImporter:
       name: Red Temp Avatar_11
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 64
         width: 32
         height: 32
@@ -433,7 +454,7 @@ TextureImporter:
       name: Red Temp Avatar_12
       rect:
         serializedVersion: 2
-        x: 64
+        x: 96
         y: 64
         width: 32
         height: 32
@@ -454,7 +475,7 @@ TextureImporter:
       name: Red Temp Avatar_13
       rect:
         serializedVersion: 2
-        x: 96
+        x: 160
         y: 64
         width: 32
         height: 32
@@ -472,10 +493,31 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Red Temp Avatar_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8c12cfdec968780800000000000000
+      internalID: -8681078685758797594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Red Temp Avatar_15
       rect:
         serializedVersion: 2
-        x: 160
+        x: 224
         y: 64
         width: 32
         height: 32
@@ -496,7 +538,7 @@ TextureImporter:
       name: Red Temp Avatar_16
       rect:
         serializedVersion: 2
-        x: 192
+        x: 256
         y: 64
         width: 32
         height: 32
@@ -517,7 +559,7 @@ TextureImporter:
       name: Red Temp Avatar_17
       rect:
         serializedVersion: 2
-        x: 224
+        x: 288
         y: 64
         width: 32
         height: 32
@@ -538,8 +580,8 @@ TextureImporter:
       name: Red Temp Avatar_18
       rect:
         serializedVersion: 2
-        x: 256
-        y: 64
+        x: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -559,8 +601,8 @@ TextureImporter:
       name: Red Temp Avatar_19
       rect:
         serializedVersion: 2
-        x: 288
-        y: 64
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -580,7 +622,7 @@ TextureImporter:
       name: Red Temp Avatar_20
       rect:
         serializedVersion: 2
-        x: 0
+        x: 64
         y: 32
         width: 32
         height: 32
@@ -601,7 +643,7 @@ TextureImporter:
       name: Red Temp Avatar_21
       rect:
         serializedVersion: 2
-        x: 32
+        x: 96
         y: 32
         width: 32
         height: 32
@@ -622,7 +664,7 @@ TextureImporter:
       name: Red Temp Avatar_22
       rect:
         serializedVersion: 2
-        x: 64
+        x: 160
         y: 32
         width: 32
         height: 32
@@ -643,7 +685,7 @@ TextureImporter:
       name: Red Temp Avatar_23
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 32
         width: 32
         height: 32
@@ -661,10 +703,31 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Red Temp Avatar_24
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e60dd347cff95640800000000000000
+      internalID: 5069364086884337384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Red Temp Avatar_25
       rect:
         serializedVersion: 2
-        x: 160
+        x: 256
         y: 32
         width: 32
         height: 32
@@ -685,7 +748,7 @@ TextureImporter:
       name: Red Temp Avatar_26
       rect:
         serializedVersion: 2
-        x: 192
+        x: 288
         y: 32
         width: 32
         height: 32
@@ -706,8 +769,8 @@ TextureImporter:
       name: Red Temp Avatar_27
       rect:
         serializedVersion: 2
-        x: 224
-        y: 32
+        x: 0
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -727,8 +790,8 @@ TextureImporter:
       name: Red Temp Avatar_28
       rect:
         serializedVersion: 2
-        x: 256
-        y: 32
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -748,8 +811,8 @@ TextureImporter:
       name: Red Temp Avatar_29
       rect:
         serializedVersion: 2
-        x: 288
-        y: 32
+        x: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -769,7 +832,7 @@ TextureImporter:
       name: Red Temp Avatar_30
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 0
         width: 32
         height: 32
@@ -790,7 +853,7 @@ TextureImporter:
       name: Red Temp Avatar_31
       rect:
         serializedVersion: 2
-        x: 32
+        x: 160
         y: 0
         width: 32
         height: 32
@@ -811,7 +874,7 @@ TextureImporter:
       name: Red Temp Avatar_32
       rect:
         serializedVersion: 2
-        x: 64
+        x: 192
         y: 0
         width: 32
         height: 32
@@ -832,7 +895,7 @@ TextureImporter:
       name: Red Temp Avatar_33
       rect:
         serializedVersion: 2
-        x: 96
+        x: 224
         y: 0
         width: 32
         height: 32
@@ -850,70 +913,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red Temp Avatar_35
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68417e25555046370800000000000000
-      internalID: 8314776676054013062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Red Temp Avatar_36
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4777665fac8b9980800000000000000
-      internalID: -8531070384426485939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Red Temp Avatar_37
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bad996d1dfa277c0800000000000000
-      internalID: -4075001397033444683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Red Temp Avatar_38
+      name: Red Temp Avatar_34
       rect:
         serializedVersion: 2
         x: 256
@@ -927,14 +927,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a67d8bce9a9135580800000000000000
-      internalID: -8839693425986447510
+      spriteID: 65f168e9e5e7e8220800000000000000
+      internalID: 2490066588834078550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red Temp Avatar_39
+      name: Red Temp Avatar_35
       rect:
         serializedVersion: 2
         x: 288
@@ -948,8 +948,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb72f3a7c36011e20800000000000000
-      internalID: 3319441257167529918
+      spriteID: 68417e25555046370800000000000000
+      internalID: 8314776676054013062
       vertices: []
       indices: 
       edges: []

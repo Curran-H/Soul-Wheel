@@ -113,15 +113,6 @@ TextureImporter:
   - first:
       213: 4288172285631763879
     second: Temp Player_36
-  - first:
-      213: -8271567202783978780
-    second: Temp Player_37
-  - first:
-      213: 982625692946014520
-    second: Temp Player_38
-  - first:
-      213: -3154097919346253453
-    second: Temp Player_39
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -163,7 +154,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
@@ -295,10 +286,31 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Temp Player_5
+      name: Temp Player_4
       rect:
         serializedVersion: 2
         x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad4a04e4f200f490800000000000000
+      internalID: -7714662910864503381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temp Player_5
+      rect:
+        serializedVersion: 2
+        x: 192
         y: 96
         width: 32
         height: 32
@@ -319,7 +331,7 @@ TextureImporter:
       name: Temp Player_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 224
         y: 96
         width: 32
         height: 32
@@ -340,7 +352,7 @@ TextureImporter:
       name: Temp Player_7
       rect:
         serializedVersion: 2
-        x: 224
+        x: 256
         y: 96
         width: 32
         height: 32
@@ -361,7 +373,7 @@ TextureImporter:
       name: Temp Player_8
       rect:
         serializedVersion: 2
-        x: 256
+        x: 288
         y: 96
         width: 32
         height: 32
@@ -382,8 +394,8 @@ TextureImporter:
       name: Temp Player_9
       rect:
         serializedVersion: 2
-        x: 288
-        y: 96
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -403,7 +415,7 @@ TextureImporter:
       name: Temp Player_10
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 64
         width: 32
         height: 32
@@ -424,7 +436,7 @@ TextureImporter:
       name: Temp Player_11
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 64
         width: 32
         height: 32
@@ -445,7 +457,7 @@ TextureImporter:
       name: Temp Player_12
       rect:
         serializedVersion: 2
-        x: 64
+        x: 96
         y: 64
         width: 32
         height: 32
@@ -466,7 +478,7 @@ TextureImporter:
       name: Temp Player_13
       rect:
         serializedVersion: 2
-        x: 96
+        x: 160
         y: 64
         width: 32
         height: 32
@@ -484,10 +496,31 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Temp Player_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff94b806a95c7700800000000000000
+      internalID: 539404625023115255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Temp Player_15
       rect:
         serializedVersion: 2
-        x: 160
+        x: 224
         y: 64
         width: 32
         height: 32
@@ -508,7 +541,7 @@ TextureImporter:
       name: Temp Player_16
       rect:
         serializedVersion: 2
-        x: 192
+        x: 256
         y: 64
         width: 32
         height: 32
@@ -529,7 +562,7 @@ TextureImporter:
       name: Temp Player_17
       rect:
         serializedVersion: 2
-        x: 224
+        x: 288
         y: 64
         width: 32
         height: 32
@@ -550,8 +583,8 @@ TextureImporter:
       name: Temp Player_18
       rect:
         serializedVersion: 2
-        x: 256
-        y: 64
+        x: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -571,8 +604,8 @@ TextureImporter:
       name: Temp Player_19
       rect:
         serializedVersion: 2
-        x: 288
-        y: 64
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -592,7 +625,7 @@ TextureImporter:
       name: Temp Player_20
       rect:
         serializedVersion: 2
-        x: 0
+        x: 64
         y: 32
         width: 32
         height: 32
@@ -613,7 +646,7 @@ TextureImporter:
       name: Temp Player_21
       rect:
         serializedVersion: 2
-        x: 32
+        x: 96
         y: 32
         width: 32
         height: 32
@@ -634,7 +667,7 @@ TextureImporter:
       name: Temp Player_22
       rect:
         serializedVersion: 2
-        x: 64
+        x: 160
         y: 32
         width: 32
         height: 32
@@ -655,7 +688,7 @@ TextureImporter:
       name: Temp Player_23
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 32
         width: 32
         height: 32
@@ -673,10 +706,31 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Temp Player_24
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1085724835c6ade00800000000000000
+      internalID: 1070286967409170433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Temp Player_25
       rect:
         serializedVersion: 2
-        x: 160
+        x: 256
         y: 32
         width: 32
         height: 32
@@ -697,7 +751,7 @@ TextureImporter:
       name: Temp Player_26
       rect:
         serializedVersion: 2
-        x: 192
+        x: 288
         y: 32
         width: 32
         height: 32
@@ -718,8 +772,8 @@ TextureImporter:
       name: Temp Player_27
       rect:
         serializedVersion: 2
-        x: 224
-        y: 32
+        x: 0
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -739,8 +793,8 @@ TextureImporter:
       name: Temp Player_28
       rect:
         serializedVersion: 2
-        x: 256
-        y: 32
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -760,8 +814,8 @@ TextureImporter:
       name: Temp Player_29
       rect:
         serializedVersion: 2
-        x: 288
-        y: 32
+        x: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -781,7 +835,7 @@ TextureImporter:
       name: Temp Player_30
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 0
         width: 32
         height: 32
@@ -802,7 +856,7 @@ TextureImporter:
       name: Temp Player_31
       rect:
         serializedVersion: 2
-        x: 32
+        x: 160
         y: 0
         width: 32
         height: 32
@@ -823,7 +877,7 @@ TextureImporter:
       name: Temp Player_32
       rect:
         serializedVersion: 2
-        x: 64
+        x: 192
         y: 0
         width: 32
         height: 32
@@ -844,7 +898,7 @@ TextureImporter:
       name: Temp Player_33
       rect:
         serializedVersion: 2
-        x: 96
+        x: 224
         y: 0
         width: 32
         height: 32
@@ -862,70 +916,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Temp Player_35
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5535f94df929b3240800000000000000
-      internalID: 4772569445293839189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Temp Player_36
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a591cc59f5a28b30800000000000000
-      internalID: 4288172285631763879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Temp Player_37
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ea1a46247d753d80800000000000000
-      internalID: -8271567202783978780
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Temp Player_38
+      name: Temp Player_34
       rect:
         serializedVersion: 2
         x: 256
@@ -939,14 +930,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 831283f8cdcf2ad00800000000000000
-      internalID: 982625692946014520
+      spriteID: b6a927de15444f030800000000000000
+      internalID: 3527519526804691563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Temp Player_39
+      name: Temp Player_35
       rect:
         serializedVersion: 2
         x: 288
@@ -960,8 +951,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 371619a47a46a34d0800000000000000
-      internalID: -3154097919346253453
+      spriteID: 5535f94df929b3240800000000000000
+      internalID: 4772569445293839189
       vertices: []
       indices: 
       edges: []
