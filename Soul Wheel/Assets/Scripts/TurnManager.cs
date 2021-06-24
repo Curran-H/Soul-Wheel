@@ -6,53 +6,43 @@ using UnityEngine;
 public class TurnManager : MonoBehaviour
 {
     public static TurnManager Instance;
-    GameManager GameManager;
     public TurnState State;
     public static event Action<TurnState> OnTurnStateChanged;
     public MovementManager movement;
+    public AttackManager attack;
 
     public List<GameObject> allCharacters;
     public List<GameObject> sortedCharacters;
-    int count;
-    bool onTurn;
+    public int count;
 
     void Awake()
     {
         Instance = this;
+        count = 0;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        GameManager = FindObjectOfType<GameManager>();
-        SpawnEnemies(); //IMPLEMENTATION REQUIRED
-        SpeedSort();
-        onTurn = true;
-        count = 0;
+        sortedCharacters.Add(GameObject.FindGameObjectWithTag("Player"));
     }
 
     // Update is called once per frame
     void Update()
     {
         if (count >= sortedCharacters.Count)
-        {
             SpeedSort();
-        }
-        if (onTurn)
-        {
-            if (sortedCharacters[count].tag == "Player")
-                UpdateGameState(TurnState.PlayerTurn);
-            else if (sortedCharacters[count].tag == "Ally")
-                UpdateGameState(TurnState.AllyTurn);
-            else if (sortedCharacters[count].tag == "Enemy")
-                UpdateGameState(TurnState.EnemyTurn);
-        }
+        else if (sortedCharacters[count].tag == "Player")
+            UpdateTurnState(TurnState.PlayerTurn);
+        else if (sortedCharacters[count].tag == "Ally")
+            UpdateTurnState(TurnState.AllyTurn);
+        else if (sortedCharacters[count].tag == "Enemy")
+            UpdateTurnState(TurnState.EnemyTurn);
     }
 
     //Sort all characters on map by speed value for proper turn order
     public void SpeedSort()
     {
-        onTurn = false;
         count = 0;
         allCharacters = new List<GameObject> (GameObject.FindGameObjectsWithTag("Player"));
         allCharacters.AddRange(GameObject.FindGameObjectsWithTag("Ally"));
@@ -65,7 +55,7 @@ public class TurnManager : MonoBehaviour
             key = allCharacters[i];
             j = i - 1;
 
-            while (j >= 0 && allCharacters[j].GetComponent<Stats>().GetSpeed() < key.GetComponent<Stats>().GetSpeed())
+            while (j >= 0 && allCharacters[j].GetComponent<Stats>().speed < key.GetComponent<Stats>().speed)
             {
                 allCharacters[j + 1] = allCharacters[j];
                 j -= 1;
@@ -74,16 +64,10 @@ public class TurnManager : MonoBehaviour
         }
 
         sortedCharacters = allCharacters;
-        onTurn = true;
         Debug.Log("Sort complete!");
     }
-
-    private void SpawnEnemies() //IMPLEMENTATION REQUIRED
-    {
-
-    }
-
-    public void UpdateGameState(TurnState newState)
+    
+    public void UpdateTurnState(TurnState newState)
     {
         State = newState;
 
@@ -113,74 +97,104 @@ public class TurnManager : MonoBehaviour
 
     private void HandlePlayerTurn()
     {
-        onTurn = true;
-        bool hasMoved = false;
-        if (State != TurnState.PlayerTurn)
-            return;
-        if(Input.GetKeyDown(KeyCode.W))
+        GameObject target = null;
+        if (Input.GetKeyDown(KeyCode.W))
         {
             if (movement.IsMovementValid(sortedCharacters[count], 0))
             {
-                movement.MoveCharacter(sortedCharacters[count], 0, 1);
-                hasMoved = true;
+                movement.MoveCharacter(sortedCharacters[count], 0, 1, () => count++);
             }
-            
+
         }
         else if (Input.GetKeyDown(KeyCode.A))
         {
             if (movement.IsMovementValid(sortedCharacters[count], 1))
             {
-                movement.MoveCharacter(sortedCharacters[count], 1, 1);
-                hasMoved = true;
+                movement.MoveCharacter(sortedCharacters[count], 1, 1, () => count++);
             }
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {
             if (movement.IsMovementValid(sortedCharacters[count], 2))
             {
-                movement.MoveCharacter(sortedCharacters[count], 2, 1);
-                hasMoved = true;
+                movement.MoveCharacter(sortedCharacters[count], 2, 1, () => count++);
             }
         }
         else if (Input.GetKeyDown(KeyCode.D))
         {
             if (movement.IsMovementValid(sortedCharacters[count], 3))
             {
-                movement.MoveCharacter(sortedCharacters[count], 3, 1);
-                hasMoved = true;
+                movement.MoveCharacter(sortedCharacters[count], 3, 1, () => count++);
             }
         }
+        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
 
-        if (hasMoved)
-            count++;
+            if (attack.IsAttackValid(sortedCharacters[count], 0, ref target))
+            {
+                attack.AttackTarget(sortedCharacters[count], target, 0, () => count++);
+            }
+
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            if (attack.IsAttackValid(sortedCharacters[count], 1, ref target))
+            {
+                attack.AttackTarget(sortedCharacters[count], target, 1, () => count++);
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            if (attack.IsAttackValid(sortedCharacters[count], 2, ref target))
+            {
+                attack.AttackTarget(sortedCharacters[count], target, 2, () => count++);
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            if (attack.IsAttackValid(sortedCharacters[count], 3, ref target))
+            {
+                attack.AttackTarget(sortedCharacters[count], target, 3, () => count++);
+            }
+        }
     }
 
     private void HandleAllyTurn()
     {
-        if (State != TurnState.AllyTurn)
-            return;
+        count++;
     }
 
     private void HandleEnemyTurn()
     {
-        if (State != TurnState.EnemyTurn)
-            return;
-        //Enemy turn stuff here
-        count++;
+        //Move enemy to random location (placeholder for actual AI)
+        if (movement.IsMovementValid(sortedCharacters[count], 0)
+            || movement.IsMovementValid(sortedCharacters[count], 1)
+            || movement.IsMovementValid(sortedCharacters[count], 2)
+            || movement.IsMovementValid(sortedCharacters[count], 3))
+        {
+            int direction = -1;
+            do
+                direction = UnityEngine.Random.Range(0, 4);
+            while (!movement.IsMovementValid(sortedCharacters[count], direction));
+            movement.MoveCharacter(sortedCharacters[count], direction, 1, () => count++);
+        }
+        else
+            count++;
     }
 
     private void HandleNextLevel()
     {
-        if (State != TurnState.NextLevel)
-            return;
         //Next level stuff here
     }
 
     private void HandleLose()
     {
-        if (State != TurnState.Lose)
-            return;
         //Lose stuff here
+    }
+
+    private void HandleBusy()
+    {
+
     }
 
     public enum TurnState

@@ -1,9 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class MovementManager : MonoBehaviour
 {
+    public TurnManager turnManager;
+
+    void Start()
+    {
+        turnManager = FindObjectOfType<TurnManager>();
+    }
+
     //Checks if movement is valid for given entity at given direction (0 = up, 1 = left, 2 = down, 3 = right)
     public bool IsMovementValid(GameObject entity, int direction)
     {
@@ -36,19 +44,12 @@ public class MovementManager : MonoBehaviour
         }
         Debug.Log("Movement valid!");
         return true;
-
-        /*Collider[] colliders = Physics.OverlapBox(entity.transform.position + offset, entity.transform.GetComponent<BoxCollider2D>().size / 2);
-        for(int colCount = 0; colCount < colliders.Length; colCount++)
-        {
-            if (colliders[colCount].tag == "Wall" || colliders[colCount].tag == "Player" || colliders[colCount].tag == "Ally" || colliders[colCount].tag == "Enemy")
-                return false;
-        }
-        return true;*/
     }
 
     //Moves given entity in given direction (0 = up, 1 = left, 2 = down, 3 = right) for given number of spaces
-    public void MoveCharacter(GameObject entity, int direction, int spaces)
+    public void MoveCharacter(GameObject entity, int direction, int spaces, Action onMovementComplete)
     {
+        //Calculate offset and move given entity
         Vector3 offset = new Vector3(0f, 0f, 0f);
         switch (direction)
         {
@@ -65,6 +66,11 @@ public class MovementManager : MonoBehaviour
                 offset = new Vector3(1f, 0f, 0f);
                 break;
         }
-        entity.transform.position += (offset * spaces);
+        entity.transform.position += offset * spaces;
+
+        //Ensure entity is still centered properly
+        entity.transform.position = new Vector3(Mathf.Round(entity.transform.position.x), Mathf.Round(entity.transform.position.y), 0f);
+
+        onMovementComplete();
     }
 }

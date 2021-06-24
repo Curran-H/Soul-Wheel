@@ -8,6 +8,7 @@ TagManager:
   - Characters
   - Ally
   - Enemy
+  - Floor
   layers:
   - Default
   - TransparentFX

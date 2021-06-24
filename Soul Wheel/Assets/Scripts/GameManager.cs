@@ -6,7 +6,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public GameObject turnManager;
+    public DungeonManager dungeonManager;
+    public AudioManager audioManager;
 
     public static event Action<GameState> OnGameStateChanged;
 
@@ -15,12 +16,12 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
+        GameObject.Instantiate(audioManager, gameObject.transform.parent);
     }
 
     private void Start()
     {
-        UpdateGameState(GameState.Sample);
-        UpdateGameState(GameState.Text);
+        UpdateGameState(GameState.Dungeon);
     }
 
     public void UpdateGameState(GameState newState)
@@ -29,11 +30,8 @@ public class GameManager : MonoBehaviour
 
         switch (newState)
         {
-            case GameState.Sample:
-                HandleSample();
-                break;
-            case GameState.Text:
-                HandleText();
+            case GameState.Dungeon:
+                HandleDungeon();
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
@@ -42,19 +40,13 @@ public class GameManager : MonoBehaviour
         OnGameStateChanged?.Invoke(newState);
     }
 
-    private void HandleSample()
+    private void HandleDungeon()
     {
-        
-    }
-
-    private void HandleText()
-    {
-
+        GameObject.Instantiate(dungeonManager, gameObject.transform.parent);
     }
 
     public enum GameState
 {
-    Sample,
-    Text
+    Dungeon
 }
 }

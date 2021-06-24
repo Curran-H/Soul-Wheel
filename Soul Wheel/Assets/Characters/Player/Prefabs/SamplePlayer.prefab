@@ -158,7 +158,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7,
+  m_Sprite: {fileID: -926476276388433177, guid: c2ac9f68ca5bd2245b393da77a61d10b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -229,4 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59bc84d330b298b4caf96a5d89407560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSpeed: 10
+  health: 25
+  damage: 10
+  speed: 5
+  defense: 3
