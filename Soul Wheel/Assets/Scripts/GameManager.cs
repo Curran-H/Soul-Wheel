@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public DungeonManager dungeonManager;
     public AudioManager audioManager;
+    public AnimationManager animationManager;
 
     public static event Action<GameState> OnGameStateChanged;
 
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         GameObject.Instantiate(audioManager, gameObject.transform.parent);
+        GameObject.Instantiate(animationManager, gameObject.transform.parent);
     }
 
     private void Start()

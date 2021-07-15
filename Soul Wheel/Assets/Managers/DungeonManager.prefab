@@ -50,6 +50,6 @@ MonoBehaviour:
   movementManager: {fileID: 8684170177457013700, guid: 30270eee515ba9941bafe07d917fb7bd,
     type: 3}
   enemyDB: {fileID: 5082730472098563925, guid: e5a67cc6290ae804e8a49b9c588a96cf, type: 3}
-  enemyBase: {fileID: 6022409709293301055, guid: 6867e5d88409a514a8c69cfade88db55,
+  enemyBase: {fileID: 8993019687089945039, guid: a8c807da75721984cb290aab0897a23e,
     type: 3}
   tileLocations: []

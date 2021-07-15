@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Stats : MonoBehaviour
 {
+    public string ID;
     public double health;
     public double damage;
     public double speed;

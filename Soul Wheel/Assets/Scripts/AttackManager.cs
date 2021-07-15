@@ -5,7 +5,14 @@ using System;
 
 public class AttackManager : MonoBehaviour
 {
-    //Checks if attack is valid for given entity at given direction (0 = up, 1 = left, 2 = down, 3 = right)
+    public AnimationManager animationManager;
+
+    private void Awake()
+    {
+        animationManager = FindObjectOfType<AnimationManager>();
+    }
+
+    //Checks if attack is valid for given entity at given direction (0 = North, 1 = West, 2 = South, 3 = East)
     public bool IsAttackValid(GameObject entity, int direction, ref GameObject target)
     {
         Vector3 offset = new Vector3(0f, 0f, 0f);
@@ -40,11 +47,59 @@ public class AttackManager : MonoBehaviour
         return false;
     }
 
-    //Makes given entity basic attack in given direction (0 = up, 1 = left, 2 = down, 3 = right)
-    public void AttackTarget(GameObject entity, GameObject target, int direction, Action onAttackComplete)
+    //Makes given entity basic attack in given direction (0 = North, 1 = West, 2 = South, 3 = East)
+    public void AttackTarget(GameObject entity, GameObject target, int direction)
     {
-        target.GetComponent<Stats>().health -= entity.GetComponent<Stats>().damage;
-        Debug.Log("Target was damaged for " + entity.GetComponent<Stats>().damage + " hp and is now at " + target.GetComponent<Stats>().health + " hp!");
-        onAttackComplete();
+        string state;
+        switch (direction)
+        {
+            case 0:
+                state = "Attack_North";
+                break;
+            case 1:
+                state = "Attack_West";
+                break;
+            case 2:
+                state = "Attack_South";
+                break;
+            case 3:
+                state = "Attack_East";
+                break;
+            default:
+                state = "Attack_South";
+                break;
+        }
+        animationManager.ChangeAnimationState(entity, state);
+        Stats entityStats = entity.GetComponent<Stats>();
+        Stats targetStats = target.GetComponent<Stats>();
+        targetStats.health -= entityStats.damage;
+        Debug.Log("Target was damaged for " + entityStats.damage + " hp and is now at " + targetStats.health + " hp!");
+    }
+
+    public void IsAttackFinished(GameObject entity, int direction, Action onAttackComplete)
+    {
+        string state = "";
+        Stats entityStats = entity.GetComponent<Stats>();
+        AnimatorStateInfo info = entity.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0);
+
+        switch (direction)
+        {
+            case 0:
+                state = entityStats.ID + "_Idle_North";
+                break;
+            case 1:
+                state = entityStats.ID + "_Idle_West";
+                break;
+            case 2:
+                state = entityStats.ID + "_Idle_South";
+                break;
+            case 3:
+                state = entityStats.ID + "_Idle_East";
+                break;
+        }
+
+        //If entity is in idle state, attack is complete
+        if (info.IsName(state))
+            onAttackComplete();
     }
 }

@@ -15,10 +15,17 @@ public class TurnManager : MonoBehaviour
     public List<GameObject> sortedCharacters;
     public int count;
 
+    int direction; //Keeps track of direction of actions (0 = North, 1 = West, 2 = South, 3 = East)
+    int currentAction; //Keeps track of which action is being performed (0 = None/Idle, 1 = Movement, 2 = Attack)
+    int moveCount; //Keeps track of how many times entity has moved (for movement on turn)
+
     void Awake()
     {
         Instance = this;
         count = 0;
+        direction = -1;
+        currentAction = 0;
+        moveCount = 0;
     }
 
     // Start is called before the first frame update
@@ -98,65 +105,93 @@ public class TurnManager : MonoBehaviour
     private void HandlePlayerTurn()
     {
         GameObject target = null;
-        if (Input.GetKeyDown(KeyCode.W))
+        if (currentAction == 0)
         {
-            if (movement.IsMovementValid(sortedCharacters[count], 0))
+            if (Input.GetKeyDown(KeyCode.W))
             {
-                movement.MoveCharacter(sortedCharacters[count], 0, 1, () => count++);
-            }
+                if (movement.IsMovementValid(sortedCharacters[count], 0))
+                {
+                    currentAction = 1;
+                    direction = 0;
+                }
 
-        }
-        else if (Input.GetKeyDown(KeyCode.A))
-        {
-            if (movement.IsMovementValid(sortedCharacters[count], 1))
-            {
-                movement.MoveCharacter(sortedCharacters[count], 1, 1, () => count++);
             }
-        }
-        else if (Input.GetKeyDown(KeyCode.S))
-        {
-            if (movement.IsMovementValid(sortedCharacters[count], 2))
+            else if (Input.GetKeyDown(KeyCode.A))
             {
-                movement.MoveCharacter(sortedCharacters[count], 2, 1, () => count++);
+                if (movement.IsMovementValid(sortedCharacters[count], 1))
+                {
+                    currentAction = 1;
+                    direction = 1;
+                }
             }
-        }
-        else if (Input.GetKeyDown(KeyCode.D))
-        {
-            if (movement.IsMovementValid(sortedCharacters[count], 3))
+            else if (Input.GetKeyDown(KeyCode.S))
             {
-                movement.MoveCharacter(sortedCharacters[count], 3, 1, () => count++);
+                if (movement.IsMovementValid(sortedCharacters[count], 2))
+                {
+                    currentAction = 1;
+                    direction = 2;
+                }
             }
-        }
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
+            else if (Input.GetKeyDown(KeyCode.D))
+            {
+                if (movement.IsMovementValid(sortedCharacters[count], 3))
+                {
+                    currentAction = 1;
+                    direction = 3;
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                if (attack.IsAttackValid(sortedCharacters[count], 0, ref target))
+                {
+                    currentAction = 2;
+                    direction = 0;
+                    attack.AttackTarget(sortedCharacters[count], target, 0);
+                }
 
-            if (attack.IsAttackValid(sortedCharacters[count], 0, ref target))
-            {
-                attack.AttackTarget(sortedCharacters[count], target, 0, () => count++);
             }
-
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                if (attack.IsAttackValid(sortedCharacters[count], 1, ref target))
+                {
+                    currentAction = 2;
+                    direction = 1;
+                    attack.AttackTarget(sortedCharacters[count], target, 1);
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                if (attack.IsAttackValid(sortedCharacters[count], 2, ref target))
+                {
+                    currentAction = 2;
+                    direction = 2;
+                    attack.AttackTarget(sortedCharacters[count], target, 2);
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                if (attack.IsAttackValid(sortedCharacters[count], 3, ref target))
+                {
+                    currentAction = 2;
+                    direction = 3;
+                    attack.AttackTarget(sortedCharacters[count], target, 3);
+                }
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        else if (currentAction == 1)
         {
-            if (attack.IsAttackValid(sortedCharacters[count], 1, ref target))
+            movement.MoveCharacter(sortedCharacters[count], direction, 1, () => { moveCount++; });
+            if (moveCount >= 600)
             {
-                attack.AttackTarget(sortedCharacters[count], target, 1, () => count++);
+                movement.CenterCharacter(sortedCharacters[count], direction);
+                moveCount = 0;
+                direction = -1;
+                currentAction = 0;
+                count++;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            if (attack.IsAttackValid(sortedCharacters[count], 2, ref target))
-            {
-                attack.AttackTarget(sortedCharacters[count], target, 2, () => count++);
-            }
-        }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            if (attack.IsAttackValid(sortedCharacters[count], 3, ref target))
-            {
-                attack.AttackTarget(sortedCharacters[count], target, 3, () => count++);
-            }
-        }
+        else if (currentAction == 2)
+            attack.IsAttackFinished(sortedCharacters[count], direction, () => { movement.CenterCharacter(sortedCharacters[count], direction); direction = -1; currentAction = 0; count++; });
     }
 
     private void HandleAllyTurn()
@@ -166,18 +201,34 @@ public class TurnManager : MonoBehaviour
 
     private void HandleEnemyTurn()
     {
-        //Move enemy to random location (placeholder for actual AI)
-        if (movement.IsMovementValid(sortedCharacters[count], 0)
+        //Check if enemy can move in any direction (placeholder for actual AI)
+        if ((movement.IsMovementValid(sortedCharacters[count], 0)
             || movement.IsMovementValid(sortedCharacters[count], 1)
             || movement.IsMovementValid(sortedCharacters[count], 2)
             || movement.IsMovementValid(sortedCharacters[count], 3))
+            && direction == -1)
         {
-            int direction = -1;
+            int currentDirection = -1;
             do
-                direction = UnityEngine.Random.Range(0, 4);
-            while (!movement.IsMovementValid(sortedCharacters[count], direction));
-            movement.MoveCharacter(sortedCharacters[count], direction, 1, () => count++);
+                currentDirection = UnityEngine.Random.Range(0, 4);
+            while (!movement.IsMovementValid(sortedCharacters[count], currentDirection));
+            direction = currentDirection;
         }
+
+        //Move enemy to random location (placeholder for actual AI)
+        else if (direction > -1)
+        {
+            movement.MoveCharacter(sortedCharacters[count], direction, 1, () => moveCount++);
+            if (moveCount >= 600)
+            {
+                movement.CenterCharacter(sortedCharacters[count], direction);
+                moveCount = 0;
+                direction = -1;
+                count++;
+            }
+        }
+
+        //If enemy cannot move, do nothing (placeholder for actual AI)
         else
             count++;
     }

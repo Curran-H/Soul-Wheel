@@ -26,9 +26,9 @@ public class DungeonManager : MonoBehaviour
     void Start()
     {
         StoreTiles();
-        SpawnEnemy("Enemy_Sample", 3);
-        SpawnEnemy("Enemy_Sample", 5);
-        SpawnEnemy("Enemy_Sample", 10);
+        SpawnEnemy("SampleEnemy", 3);
+        SpawnEnemy("SampleEnemy", 5);
+        SpawnEnemy("SampleEnemy", 10);
     }
 
     public void StoreTiles()
@@ -52,8 +52,7 @@ public class DungeonManager : MonoBehaviour
     public void SpawnEnemy(string enemyID, int level)
     {
         //First, spawn basic enemy at random location (in map, but randomly around player)
-        Enemy baseEnemy = enemyDB.GetEnemyByID("Enemy_Sample");
-        Vector3 playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
+        Enemy baseEnemy = enemyDB.GetEnemyByID(enemyID);
         bool spawnValid = false;
         Vector3 randomPos = new Vector3(0, 0, 0);
         while(!spawnValid)
@@ -69,11 +68,14 @@ public class DungeonManager : MonoBehaviour
         Object.Instantiate(enemyBase, randomPos, new Quaternion(0f, 0f, 0f, 0f));
 
         //Then, set enemy's stats based on their base stats from the stats sheet and level growth (actual growth algorithm TBD)
+        enemyBase.name = enemyID;
         Stats enemyStats = enemyBase.GetComponent<Stats>();
+        enemyStats.ID = baseEnemy.enemyID;
         enemyStats.health = baseEnemy.baseHealth + (level * 5);
         enemyStats.damage = baseEnemy.baseDamage + (level * 2);
         enemyStats.speed = baseEnemy.baseSpeed + (level * 2);
         enemyStats.defense = baseEnemy.baseDefense + (level * 2);
         enemyStats.GetComponent<SpriteRenderer>().sprite = baseEnemy.enemySprite;
+        enemyStats.GetComponent<Animator>().runtimeAnimatorController = baseEnemy.animController;
     }
 }

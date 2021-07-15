@@ -45,4 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dungeonManager: {fileID: 2809527218429875563, guid: f0ff756091a97bd42ad43df458aedf6b,
     type: 3}
+  audioManager: {fileID: 8279484093166665059, guid: 16513f1cb5b83d047841702ae2df1f02,
+    type: 3}
+  animationManager: {fileID: 361784297463976377, guid: 3d68113c408387244be45ee0b045fcf0,
+    type: 3}
   State: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a1be6edb836ce4caeb4e0b7ad4efa1, type: 3}
   m_Name: SampleEnemy
   m_EditorClassIdentifier: 
-  enemyID: Enemy_Sample
+  enemyID: SampleEnemy
   enemyName: Sample Enemy
   baseHealth: 10
   baseDamage: 2
@@ -20,3 +20,4 @@ MonoBehaviour:
   baseDefense: 1
   enemySprite: {fileID: 1693399042220878305, guid: 59849fdde2892514d9ccb86f12b3e92b,
     type: 3}
+  animController: {fileID: 9100000, guid: 29262bca5b5435d4baddc251a77af4d2, type: 2}

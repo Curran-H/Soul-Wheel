@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8684170177457013703
+--- !u!1 &7507786141077000670
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8684170177457013701}
-  - component: {fileID: 8684170177457013700}
+  - component: {fileID: 5160972076270078803}
+  - component: {fileID: 361784297463976377}
   m_Layer: 0
-  m_Name: MovementManager
+  m_Name: AnimationManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8684170177457013701
+--- !u!4 &5160972076270078803
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8684170177457013703}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1816864, y: 0.26665306, z: -13.865109}
+  m_GameObject: {fileID: 7507786141077000670}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.3055872, y: 0.42609388, z: -0.40421823}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8684170177457013700
+--- !u!114 &361784297463976377
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8684170177457013703}
+  m_GameObject: {fileID: 7507786141077000670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a1c81cb159ed404bb8b6c37119ecd48, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b1bdd0113c66dc4a8867d49c91f1b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnManager: {fileID: 1053718049832785863, guid: b085f7913c5cd4e4b864e62cbe201b11,
-    type: 3}
-  animationManager: {fileID: 361784297463976377, guid: 3d68113c408387244be45ee0b045fcf0,
-    type: 3}

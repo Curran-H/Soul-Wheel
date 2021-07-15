@@ -1077,6 +1077,31 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &271314975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5260884325826446078, guid: 69ab49d55f3dc4c4db8a61d02e2dade4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1907719645}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &271314981
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271314975}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5e6d004e96bcb294fb7682897770f10f, type: 2}
+  m_CullingMode: 2
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &701183985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1044543045760122267, guid: 5ea7f7e7ac00885469dc9ee686922165,
@@ -1795,7 +1820,7 @@ PrefabInstance:
     - target: {fileID: 5260884325826446016, guid: 69ab49d55f3dc4c4db8a61d02e2dade4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5260884325826446016, guid: 69ab49d55f3dc4c4db8a61d02e2dade4,
         type: 3}
@@ -1847,10 +1872,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5260884325826446017, guid: 69ab49d55f3dc4c4db8a61d02e2dade4,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4674032906080445294, guid: c2ac9f68ca5bd2245b393da77a61d10b,
+        type: 3}
     - target: {fileID: 5260884325826446078, guid: 69ab49d55f3dc4c4db8a61d02e2dade4,
         type: 3}
       propertyPath: m_Name
-      value: SamplePlayer
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8097186605925487113, guid: 69ab49d55f3dc4c4db8a61d02e2dade4,
         type: 3}
@@ -1989,7 +2020,7 @@ Transform:
   - {fileID: 1327240820}
   - {fileID: 245698303}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1044543045085284970
 PrefabInstance:
@@ -2008,6 +2039,12 @@ PrefabInstance:
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 8279484093166665059, guid: 16513f1cb5b83d047841702ae2df1f02,
+        type: 3}
+    - target: {fileID: 1044543045760122266, guid: 5ea7f7e7ac00885469dc9ee686922165,
+        type: 3}
+      propertyPath: animationManager
+      value: 
+      objectReference: {fileID: 361784297463976377, guid: 3d68113c408387244be45ee0b045fcf0,
         type: 3}
     - target: {fileID: 1044543045760122267, guid: 5ea7f7e7ac00885469dc9ee686922165,
         type: 3}
