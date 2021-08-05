@@ -10,7 +10,6 @@ public class Stats : MonoBehaviour
     public float maxHealth;
     public HealthbarBehavior Healthbar;
 
-
     public double damage;
     public double speed;
     public double defense;
@@ -19,5 +18,16 @@ public class Stats : MonoBehaviour
     {
         health = maxHealth;
         Healthbar.SetHealth(health, maxHealth);
+    }
+
+    public void TakeHit(float damage)
+    {
+        health -= damage;
+        Healthbar.SetHealth(health, maxHealth);
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
