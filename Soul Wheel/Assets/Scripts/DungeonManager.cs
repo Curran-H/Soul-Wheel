@@ -71,7 +71,7 @@ public class DungeonManager : MonoBehaviour
         enemyBase.name = enemyID;
         Stats enemyStats = enemyBase.GetComponent<Stats>();
         enemyStats.ID = baseEnemy.enemyID;
-        enemyStats.health = baseEnemy.baseHealth + (level * 5);
+        enemyStats.health = (float)baseEnemy.baseHealth + (level * 5);
         enemyStats.damage = baseEnemy.baseDamage + (level * 2);
         enemyStats.speed = baseEnemy.baseSpeed + (level * 2);
         enemyStats.defense = baseEnemy.baseDefense + (level * 2);

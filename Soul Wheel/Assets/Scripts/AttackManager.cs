@@ -72,7 +72,7 @@ public class AttackManager : MonoBehaviour
         animationManager.ChangeAnimationState(entity, state);
         Stats entityStats = entity.GetComponent<Stats>();
         Stats targetStats = target.GetComponent<Stats>();
-        targetStats.health -= entityStats.damage;
+        targetStats.health -= (float)entityStats.damage;
         Debug.Log("Target was damaged for " + entityStats.damage + " hp and is now at " + targetStats.health + " hp!");
     }
 
@@ -110,7 +110,7 @@ public class AttackManager : MonoBehaviour
                 GameObject target = hit.collider.gameObject;
                 Stats entityStats = entity.GetComponent<Stats>();
                 Stats targetStats = target.GetComponent<Stats>();
-                targetStats.health -= entityStats.damage;
+                targetStats.health -= (float)entityStats.damage;
                 Debug.Log("Target was damaged for " + entityStats.damage + " hp and is now at " + targetStats.health + " hp!");
             }
         }

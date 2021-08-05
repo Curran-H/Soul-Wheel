@@ -5,8 +5,19 @@ using UnityEngine;
 public class Stats : MonoBehaviour
 {
     public string ID;
-    public double health;
+
+    public float health;
+    public float maxHealth;
+    public HealthbarBehavior Healthbar;
+
+
     public double damage;
     public double speed;
     public double defense;
+
+    private void Start()
+    {
+        health = maxHealth;
+        Healthbar.SetHealth(health, maxHealth);
+    }
 }
