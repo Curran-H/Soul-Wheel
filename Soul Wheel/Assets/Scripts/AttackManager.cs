@@ -76,11 +76,51 @@ public class AttackManager : MonoBehaviour
         Debug.Log("Target was damaged for " + entityStats.damage + " hp and is now at " + targetStats.health + " hp!");
     }
 
+    public void AttackTargetIfValid(GameObject entity, int direction)
+    {
+        string state = "";
+        Vector3 offset = new Vector3(0f, 0f, 0f);
+        switch (direction)
+        {
+            case 0:
+                state = "Attack_North";
+                offset = new Vector3(0f, 1f, 0f);
+                break;
+            case 1:
+                state = "Attack_West";
+                offset = new Vector3(-1f, 0f, 0f);
+                break;
+            case 2:
+                state = "Attack_South";
+                offset = new Vector3(0f, -1f, 0f);
+                break;
+            case 3:
+                state = "Attack_East";
+                offset = new Vector3(1f, 0f, 0f);
+                break;
+        }
+
+        animationManager.ChangeAnimationState(entity, state);
+        Rigidbody2D rb2d = entity.GetComponent<Rigidbody2D>();
+        RaycastHit2D hit = Physics2D.BoxCast(entity.transform.position + offset, new Vector2(0.5f, 0.5f), 0, new Vector2(0, 0));
+        if (hit.collider != null)
+        {
+            if (((entity.tag == "Player" || entity.tag == "Ally") && hit.collider.tag == "Enemy") || (entity.tag == "Enemy" && (hit.collider.tag == "Player" || hit.collider.tag == "Ally")))
+            {
+                GameObject target = hit.collider.gameObject;
+                Stats entityStats = entity.GetComponent<Stats>();
+                Stats targetStats = target.GetComponent<Stats>();
+                targetStats.health -= entityStats.damage;
+                Debug.Log("Target was damaged for " + entityStats.damage + " hp and is now at " + targetStats.health + " hp!");
+            }
+        }
+    }
+
     public void IsAttackFinished(GameObject entity, int direction, Action onAttackComplete)
     {
         string state = "";
         Stats entityStats = entity.GetComponent<Stats>();
-        AnimatorStateInfo info = entity.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0);
+        AnimatorStateInfo info = entity.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0);
 
         switch (direction)
         {

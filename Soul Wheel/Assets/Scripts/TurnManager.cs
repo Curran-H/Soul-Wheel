@@ -104,7 +104,7 @@ public class TurnManager : MonoBehaviour
 
     private void HandlePlayerTurn()
     {
-        GameObject target = null;
+        //GameObject target = null;
         if (currentAction == 0)
         {
             if (Input.GetKeyDown(KeyCode.W))
@@ -142,40 +142,40 @@ public class TurnManager : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                if (attack.IsAttackValid(sortedCharacters[count], 0, ref target))
-                {
-                    currentAction = 2;
-                    direction = 0;
-                    attack.AttackTarget(sortedCharacters[count], target, 0);
-                }
+                //if (attack.IsAttackValid(sortedCharacters[count], 0, ref target))
+                //{
+                currentAction = 2;
+                direction = 0;
+                attack.AttackTargetIfValid(sortedCharacters[count], 0);
+                //}
 
             }
             else if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                if (attack.IsAttackValid(sortedCharacters[count], 1, ref target))
-                {
-                    currentAction = 2;
-                    direction = 1;
-                    attack.AttackTarget(sortedCharacters[count], target, 1);
-                }
+                //if (attack.IsAttackValid(sortedCharacters[count], 1, ref target))
+                //{
+                currentAction = 2;
+                direction = 1;
+                attack.AttackTargetIfValid(sortedCharacters[count], 1);
+                //}
             }
             else if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                if (attack.IsAttackValid(sortedCharacters[count], 2, ref target))
-                {
-                    currentAction = 2;
-                    direction = 2;
-                    attack.AttackTarget(sortedCharacters[count], target, 2);
-                }
+                //if (attack.IsAttackValid(sortedCharacters[count], 2, ref target))
+                //{
+                currentAction = 2;
+                direction = 2;
+                attack.AttackTargetIfValid(sortedCharacters[count], 2);
+                //}
             }
             else if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                if (attack.IsAttackValid(sortedCharacters[count], 3, ref target))
-                {
-                    currentAction = 2;
-                    direction = 3;
-                    attack.AttackTarget(sortedCharacters[count], target, 3);
-                }
+                //if (attack.IsAttackValid(sortedCharacters[count], 3, ref target))
+                //{
+                currentAction = 2;
+                direction = 3;
+                attack.AttackTargetIfValid(sortedCharacters[count], 3);
+                //}
             }
         }
         else if (currentAction == 1)

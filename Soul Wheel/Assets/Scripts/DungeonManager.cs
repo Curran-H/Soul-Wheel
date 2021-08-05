@@ -75,7 +75,7 @@ public class DungeonManager : MonoBehaviour
         enemyStats.damage = baseEnemy.baseDamage + (level * 2);
         enemyStats.speed = baseEnemy.baseSpeed + (level * 2);
         enemyStats.defense = baseEnemy.baseDefense + (level * 2);
-        enemyStats.GetComponent<SpriteRenderer>().sprite = baseEnemy.enemySprite;
-        enemyStats.GetComponent<Animator>().runtimeAnimatorController = baseEnemy.animController;
+        enemyStats.GetComponentInChildren<SpriteRenderer>().sprite = baseEnemy.enemySprite;
+        enemyStats.GetComponentInChildren<Animator>().runtimeAnimatorController = baseEnemy.animController;
     }
 }

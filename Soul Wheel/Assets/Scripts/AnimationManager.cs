@@ -23,7 +23,7 @@ public class AnimationManager : MonoBehaviour
     public void ChangeAnimationState(GameObject entity, string newState)
     {
         newState = entity.GetComponent<Stats>().ID + "_" + newState;
-        animator = entity.GetComponent<Animator>();
+        animator = entity.GetComponentInChildren<Animator>();
 
         //Stop animation from playing over itself
         if (currentState == newState)
