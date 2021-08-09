@@ -38,11 +38,11 @@ public class MovementManager : MonoBehaviour
         {
             if (hit.collider.tag == "Wall" || hit.collider.tag == "Player" || hit.collider.tag == "Ally" || hit.collider.tag == "Enemy")
             {
-                Debug.Log("Movement invalid!");
+                //Debug.Log("Movement invalid!");
                 return false;
             }
         }
-        Debug.Log("Movement valid!");
+        //Debug.Log("Movement valid!");
         return true;
     }
 
@@ -68,10 +68,10 @@ public class MovementManager : MonoBehaviour
         }
 
         //Move entity 1/60th of given spaces (This will be repeated 60 times to move the full number of spaces, more spaces means more speed to avoid drawn-out movements of 3+ spaces
-        entity.transform.position += offset * spaces * (1.0f/600.0f);
+        entity.transform.position += offset * spaces * (1.0f/300.0f);
 
         //Begin playing animation if not already playing
-        string state;
+        string state = "";
         switch (direction)
         {
             case 0:
@@ -85,9 +85,6 @@ public class MovementManager : MonoBehaviour
                 break;
             case 3:
                 state = "Walk_East";
-                break;
-            default:
-                state = "Walk_South";
                 break;
         }
         animationManager.ChangeAnimationState(entity, state);
@@ -117,6 +114,5 @@ public class MovementManager : MonoBehaviour
                 animationManager.ChangeAnimationState(entity, "Idle_East");
                 break;
         }
-        
     }
 }

@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
     }
 
     public enum GameState
-{
-    Dungeon
-}
+    {
+        Dungeon
+    }
 }

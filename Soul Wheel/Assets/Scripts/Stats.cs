@@ -25,7 +25,7 @@ public class Stats : MonoBehaviour
         health -= damage;
         Healthbar.SetHealth(health, maxHealth);
 
-        if (health <= 0)
+        if (health <= 0 && ID != "Player")
         {
             Destroy(gameObject);
         }
