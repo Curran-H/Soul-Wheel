@@ -45,7 +45,7 @@ public class TurnManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (turnBuffer)
         {
@@ -211,7 +211,7 @@ public class TurnManager : MonoBehaviour
         else if (currentAction == 1)
         {
             movement.MoveCharacter(player, direction, 1, () => { moveCount++; });
-            if (moveCount >= 300)
+            if (moveCount >= 60)
             {
                 movement.CenterCharacter(player, direction);
                 moveCount = 0;
@@ -332,7 +332,7 @@ public class TurnManager : MonoBehaviour
                 if (direction > -1)
                 {
                     movement.MoveCharacter(currEnemy, direction, 1, () => moveCount++);
-                    if (moveCount >= 300)
+                    if (moveCount >= 60)
                     {
                         movement.CenterCharacter(currEnemy, direction);
                         moveCount = 0;

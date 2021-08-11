@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.Animations;
 
 [CreateAssetMenu(fileName = "New Enemy", menuName = "Characters/Enemies")]   
 public class Enemy : ScriptableObject
@@ -13,5 +12,4 @@ public class Enemy : ScriptableObject
     public double baseSpeed;
     public double baseDefense;
     public Sprite enemySprite;
-    public AnimatorController animController;
 }
